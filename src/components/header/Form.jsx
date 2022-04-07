@@ -3,9 +3,15 @@ import React from 'react'
 import { FoodInput, FormContainer, Button, Select } from './HeaderStyles'
 
 const Form = ({ setQuery, getData, mealTypes, setMeal }) => {
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    getData();
+  }
+  
   return (
     <div>
-      <FormContainer>
+      <FormContainer onSubmit={handleSubmit}>
        <FoodInput
        type="text"
        placeholder="Search for food"
