@@ -1,9 +1,29 @@
 
 import React from 'react'
+import { LoginContainer, FormContainer, StyledImg,Header, StyledInput, StyledButton, StyledForm   } from './LoginStyles'
+import meal from '../../assets/meal.svg';
+
 
 const Login = () => {
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    window.location.href = "/home";
+  }
+
   return (
-    <div>Login</div>
+    <LoginContainer>
+      <FormContainer>
+        <StyledImg src={meal} alt="logo" />
+        <Header>{"<Clarusway/>"}Recipe</Header>
+        <StyledForm onSubmit={handleSubmit}>
+          <StyledInput type="text" placeholder="Username" required/>
+          <StyledInput type="password" placeholder="Password" required/>
+          <StyledButton type="submit">Login</StyledButton>
+        </StyledForm>
+       
+      </FormContainer>
+    </LoginContainer>
   )
 }
 
