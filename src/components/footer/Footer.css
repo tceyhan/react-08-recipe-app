@@ -11,6 +11,8 @@
     height: 55px;
     display: flex;
     justify-content: center;
+    background: rgb(131,58,180);
+  background: linear-gradient(321deg, rgb(30, 122, 150) 0%, rgba(55,29,253,0.29175420168067223) 50%, rgb(21, 239, 130) 100%);
   }
   
   .brand {

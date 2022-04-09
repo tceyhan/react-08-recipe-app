@@ -1,37 +1,25 @@
-import React from "react";
-import {
-  AboutContainer,
-  HeaderContainer,
-  InfoContainer,
-  StyledImage,
-} from "./AboutStyles";
-import codingSvg from "../../assets/coding.svg";
+
+import React from 'react';
+import coding from "../../assets/coding.svg";
+import styles from "./About.module.css";
 
 const About = () => {
   return (
-    <AboutContainer>
-      {/* sayfanın tamamı */}
-      <StyledImage src={codingSvg} />
-      <HeaderContainer>
-        <h1>
-          About Software Developer <span>Tarık CEYHAN </span>
-        </h1>
-      </HeaderContainer>
-      <InfoContainer>
-        <h2>Hi, I'am Tarık</h2>
-        <h3>I'm currently learning Full-Stack Development Languages.</h3>
-        <h4>
-          
-          I've already known JS, ReactJS, ReactNative, NodeJS, MongoDB,SQL,
-          Java, Hibernate, SpringBoot, AWS Services.
-        </h4>
-        <h2>
-          <a href="mailto:55tc155@clarusway.com">Send email</a> :
-          Ashley@clarusway.com
-        </h2>
-      </InfoContainer>
-    </AboutContainer>
-  );
-};
+    <div className={styles.about}>
+      <div>
+      <img src = {coding} alt="" className={styles.aboutImg}/>
+      </div>
+      <div className={styles.aboutHead}>
+        <h1 className={styles.aboutH1}>About Software Developer <div className={styles.aboutSpan}>TARIK CEYHAN</div></h1>
+      </div>
+      <div className={styles.aboutText}>
+        <h3>Hi, I'am Tarık</h3>
+        <h3>I’m currently learning Full-Stack Development Languages.</h3>
+        <h3>I know JS, TS, ReactJS, Django, NodeJS, SQL, Python</h3>
+        <h3><a className={styles.aboutEmail} href="mailto:55tc155@gmail.com" className={styles.aboutEmail}>Send E-mail</a> : 55tc155@gmail.com</h3>
+      </div>
+    </div>
+  )
+}
 
-export default About;
+export default About
