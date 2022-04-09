@@ -5,9 +5,14 @@ import meal from '../../assets/meal.svg';
 
 
 const Login = () => {
+  
+ const user = {
+  username: 'user' 
+  }
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    sessionStorage.setItem('user', JSON.stringify(user));
     window.location.href = "/home";
   }
 

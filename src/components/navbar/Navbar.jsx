@@ -22,7 +22,7 @@ const Navbar = () => {
         <Menu osman = {isOpen}>
          <MenuLink to="/about" onClick = {() => setIsOpen(!isOpen)}>About</MenuLink>
          <MenuLink to="/github">Github</MenuLink>
-         <MenuLink to="/" onClick = {() => setIsOpen(!isOpen)}>Logout</MenuLink>
+         <MenuLink to="/" onClick = {() => setIsOpen(!isOpen)} onMouseUp={() => sessionStorage.clear()}>Logout</MenuLink>
 
         </Menu>
 
