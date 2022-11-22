@@ -1,1 +1,1 @@
-https://react-08-recipe-app.herokuapp.com/  
+https://react-08-recipe-app.netlify.app/home
