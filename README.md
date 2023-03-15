@@ -1,1 +1,1 @@
-https://react-08-recipe-app.netlify.app/home
+https://926ef6e9.react-08-recipe-app.pages.dev/
